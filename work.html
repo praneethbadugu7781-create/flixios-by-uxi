@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work – FLIXIOS | Creative Media Studio</title>
+    <meta name="description" content="Explore FLIXIOS portfolio of premium video production, motion design, and creative content for leading brands.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="work">
+    <!-- Page Transition -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-logo">FLIXIOS</div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav-logo">
+            <span class="nav-logo-text">FLIXIOS</span>
+            <span class="nav-logo-dot"></span>
+            <span class="nav-logo-sub">A UXI Tech Brand</span>
+        </a>
+        
+        <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-text="Home">Home</a>
+                <a href="work.html" class="nav-link active" data-text="Work">Work</a>
+                <a href="services.html" class="nav-link" data-text="Services">Services</a>
+                <a href="about.html" class="nav-link" data-text="About">About</a>
+            </div>
+            <a href="contact.html" class="nav-cta">
+                <span>Let's Talk</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="work.html" class="mobile-link active">Work</a>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="about.html" class="mobile-link">About</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="mailto:officialflixios@gmail.com">officialflixios@gmail.com</a>
+                <span>A UXI Tech Brand</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg">
+            <div class="page-header-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-header-label">Portfolio</span>
+                <h1 class="page-header-title">Our Work</h1>
+                <p class="page-header-description">
+                    A curated collection of projects that showcase our creative excellence 
+                    and commitment to visual storytelling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Filter -->
+    <section class="work-filter-section">
+        <div class="container">
+            <div class="work-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="brand">Brand Films</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+                <button class="filter-btn" data-filter="ads">Ad Creatives</button>
+                <button class="filter-btn" data-filter="motion">Motion</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Gallery -->
+    <section class="work-gallery">
+        <div class="container">
+            <div class="work-masonry">
+                <!-- Project 1 -->
+                <article class="project-card large" data-category="brand" data-video="reel1.mp4">
+                    <div class="project-card-link">
+                        <div class="project-card-media">
+                            <video muted loop playsinline autoplay>
+                                <source src="reel1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card-label">Video 1</div>
+                        <div class="project-card-overlay">
+                            <span class="project-view">▶ Play</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="reels" data-video="reel2.mp4">
+                    <div class="project-card-link">
+                        <div class="project-card-media">
+                            <video muted loop playsinline autoplay>
+                                <source src="reel2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card-label">Video 2</div>
+                        <div class="project-card-overlay">
+                            <span class="project-view">▶ Play</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="motion" data-video="reel3.mp4">
+                    <div class="project-card-link">
+                        <div class="project-card-media">
+                            <video muted loop playsinline autoplay>
+                                <source src="reel3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card-label">Video 3</div>
+                        <div class="project-card-overlay">
+                            <span class="project-view">▶ Play</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card tall" data-category="ads" data-video="reel4.mp4">
+                    <div class="project-card-link">
+                        <div class="project-card-media">
+                            <video muted loop playsinline autoplay>
+                                <source src="reel4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card-label">Video 4</div>
+                        <div class="project-card-overlay">
+                            <span class="project-view">▶ Play</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="brand" data-video="reel5.mp4">
+                    <div class="project-card-link">
+                        <div class="project-card-media">
+                            <video muted loop playsinline autoplay>
+                                <source src="reel5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card-label">Video 5</div>
+                        <div class="project-card-overlay">
+                            <span class="project-view">▶ Play</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="work-load-more">
+                <button class="btn btn-outline">
+                    <span>Load More Projects</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work CTA -->
+    <section class="work-cta">
+        <div class="container">
+            <div class="work-cta-content">
+                <h2>Have a project in mind?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <span>Start a Project</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-container">
+            <button class="video-modal-close" id="videoModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+            <div class="video-modal-content">
+                <video class="video-modal-player" id="videoModalPlayer" controls playsinline>
+                    <source src="" type="video/mp4">
+                </video>
+                <div class="video-modal-controls">
+                    <button class="video-mute-btn" id="videoMuteBtn">
+                        <svg class="mute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M23 9L17 15M17 9L23 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <svg class="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span class="mute-text">Sound Off</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">FLIXIOS</a>
+                    <p class="footer-tagline">Creative Media Studio</p>
+                    <p class="footer-uxi">A UXI Tech Brand</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="work.html">Work</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="services.html#reels">Reels & Shorts</a>
+                        <a href="services.html#ads">Ad Creatives</a>
+                        <a href="services.html#brand">Brand Videos</a>
+                        <a href="services.html#motion">Motion Design</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="mailto:officialflixios@gmail.com" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>officialflixios@gmail.com</span>
+                        </a>
+                        <a href="https://instagram.com/theflixios" target="_blank" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>@theflixios</span>
+                        </a>
+                        <a href="tel:+918885666332" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+91 8885666332</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 FLIXIOS. All rights reserved.</p>
+                <p class="footer-uxi-badge">A <strong>UXI Tech</strong> Brand</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

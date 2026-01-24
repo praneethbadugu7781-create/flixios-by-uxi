@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIXIOS – Creative Media Studio | A UXI Tech Brand</title>
+    <meta name="description" content="FLIXIOS is a premium creative media studio specializing in reels, ad creatives, brand videos, and motion design. A UXI Tech Brand.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-logo">FLIXIOS</div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">FLIXIOS</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-text">Loading Experience</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav-logo">
+            <span class="nav-logo-text">FLIXIOS</span>
+            <span class="nav-logo-dot"></span>
+            <span class="nav-logo-sub">A UXI Tech Brand</span>
+        </a>
+        
+        <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active" data-text="Home">Home</a>
+                <a href="work.html" class="nav-link" data-text="Work">Work</a>
+                <a href="services.html" class="nav-link" data-text="Services">Services</a>
+                <a href="about.html" class="nav-link" data-text="About">About</a>
+            </div>
+            <a href="contact.html" class="nav-cta">
+                <span>Let's Talk</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="index.html" class="mobile-link active">Home</a>
+                <a href="work.html" class="mobile-link">Work</a>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="about.html" class="mobile-link">About</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="mailto:officialflixios@gmail.com">officialflixios@gmail.com</a>
+                <span>A UXI Tech Brand</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        
+        <div class="hero-canvas" id="heroCanvas"></div>
+        
+        <div class="hero-content">
+            <div class="hero-label">
+                <span class="hero-label-line"></span>
+                <span>Creative Media Studio</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="hero-title-line">
+                    <span class="hero-title-word" data-delay="0">We</span>
+                    <span class="hero-title-word" data-delay="1">Create</span>
+                </span>
+                <span class="hero-title-line">
+                    <span class="hero-title-word highlight" data-delay="2">Visual</span>
+                    <span class="hero-title-word" data-delay="3">Stories</span>
+                </span>
+            </h1>
+            
+            <p class="hero-description">
+                Premium video production and motion design studio crafting 
+                compelling narratives for brands that demand excellence.
+            </p>
+            
+            <div class="hero-cta">
+                <a href="work.html" class="btn btn-primary">
+                    <span>View Our Work</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 15L15 5M15 5H7.5M15 5V12.5" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    <span>Start a Project</span>
+                </a>
+            </div>
+            
+            <div class="hero-brand">
+                <span class="hero-brand-text">A UXI Tech Brand</span>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="hero-scroll-text">Scroll to explore</div>
+            <div class="hero-scroll-line">
+                <div class="hero-scroll-dot"></div>
+            </div>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="hero-stat-number" data-count="150">0</span>
+                <span class="hero-stat-label">Projects Delivered</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number" data-count="50">0</span>
+                <span class="hero-stat-label">Happy Clients</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-number" data-count="5">0</span>
+                <span class="hero-stat-label">Years Experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section class="showreel" id="showreel">
+        <div class="showreel-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title-sm">Featured Reel</h2>
+        </div>
+        
+        <div class="showreel-wrapper">
+            <div class="showreel-container">
+                <video 
+                    class="showreel-video" 
+                    id="showreelVideo"
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                >
+                    <source src="reel1.mp4" type="video/mp4">
+                </video>
+                <div class="showreel-overlay">
+                    <button class="showreel-play" id="showreelPlay">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="39" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 24L56 40L32 56V24Z" fill="currentColor"/>
+                        </svg>
+                        <span>Play Reel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="showreel-info">
+            <div class="showreel-title">2025 Showreel</div>
+            <div class="showreel-duration">02:45</div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">Comprehensive creative solutions for modern brands</p>
+            </div>
+            
+            <div class="services-grid">
+                <a href="services.html#reels" class="service-card" data-service="reels">
+                    <div class="service-card-number">01</div>
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 18L32 24L20 30V18Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Reels & Shorts</h3>
+                        <p>Scroll-stopping vertical content optimized for maximum engagement on social platforms.</p>
+                    </div>
+                    <div class="service-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </a>
+                
+                <a href="services.html#ads" class="service-card" data-service="ads">
+                    <div class="service-card-number">02</div>
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 14V24L30 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Ad Creatives</h3>
+                        <p>High-converting video advertisements that drive results across all digital platforms.</p>
+                    </div>
+                    <div class="service-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </a>
+                
+                <a href="services.html#brand" class="service-card" data-service="brand">
+                    <div class="service-card-number">03</div>
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6L6 14V34L24 42L42 34V14L24 6Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 22V42" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 14L24 22L42 14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Brand Videos</h3>
+                        <p>Cinematic storytelling that captures your brand's unique essence and values.</p>
+                    </div>
+                    <div class="service-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </a>
+                
+                <a href="services.html#motion" class="service-card" data-service="motion">
+                    <div class="service-card-number">04</div>
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="16" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 24H26" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M38 16L42 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Motion Design</h3>
+                        <p>Dynamic animations and graphics that bring your ideas to life beautifully.</p>
+                    </div>
+                    <div class="service-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-text">
+                    <span>Explore All Services</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="featured-work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-subtitle">Recent projects we're proud of</p>
+            </div>
+            
+            <div class="work-grid">
+                <div class="work-item large" data-video="reel1.mp4">
+                    <div class="work-item-media">
+                        <video muted loop playsinline autoplay>
+                            <source src="reel1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="work-item-label">Video 1</div>
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">▶ Play</span>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-video="reel2.mp4">
+                    <div class="work-item-media">
+                        <video muted loop playsinline autoplay>
+                            <source src="reel2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="work-item-label">Video 2</div>
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">▶ Play</span>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-video="reel3.mp4">
+                    <div class="work-item-media">
+                        <video muted loop playsinline autoplay>
+                            <source src="reel3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="work-item-label">Video 3</div>
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">▶ Play</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-cta">
+                <a href="work.html" class="btn btn-primary">
+                    <span>View All Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 15L15 5M15 5H7.5M15 5V12.5" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A proven approach to creative excellence</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-line"></div>
+                
+                <div class="process-step" data-step="1">
+                    <div class="process-step-dot"></div>
+                    <div class="process-step-number">01</div>
+                    <div class="process-step-content">
+                        <h3>Discovery</h3>
+                        <p>Understanding your vision, goals, and target audience through in-depth consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-step="2">
+                    <div class="process-step-dot"></div>
+                    <div class="process-step-number">02</div>
+                    <div class="process-step-content">
+                        <h3>Strategy</h3>
+                        <p>Crafting the creative direction, storyboarding, and detailed production plan.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-step="3">
+                    <div class="process-step-dot"></div>
+                    <div class="process-step-number">03</div>
+                    <div class="process-step-content">
+                        <h3>Production</h3>
+                        <p>Bringing concepts to life with precision, artistry, and cutting-edge techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-step="4">
+                    <div class="process-step-dot"></div>
+                    <div class="process-step-number">04</div>
+                    <div class="process-step-content">
+                        <h3>Delivery</h3>
+                        <p>Polished final assets optimized for every platform, ready to make an impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Client Words</h2>
+            </div>
+            
+            <div class="testimonials-wrapper">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial active">
+                        <blockquote class="testimonial-quote">
+                            The quality of work from FLIXIOS is exceptional. They delivered our product launch video ahead of schedule and the engagement metrics exceeded our targets by 40%.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-avatar">RK</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Rahul Kapoor</span>
+                                <span class="testimonial-role">Marketing Head, Zomato</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <blockquote class="testimonial-quote">
+                            We've worked with many video production teams, but FLIXIOS stands out. Their creative approach to our brand storytelling helped us connect with Gen Z audiences effectively.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-avatar">PS</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Priya Sharma</span>
+                                <span class="testimonial-role">Brand Manager, boAt Lifestyle</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <blockquote class="testimonial-quote">
+                            Professional, reliable, and incredibly creative. FLIXIOS understood our vision from day one and brought our fitness campaign to life beautifully.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-avatar">AM</div>
+                            <div class="testimonial-author-info">
+                                <span class="testimonial-name">Ankit Malhotra</span>
+                                <span class="testimonial-role">Co-founder, cult.fit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-nav">
+                <button class="testimonial-nav-btn prev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <div class="testimonials-dots">
+                    <button class="testimonial-dot active" data-index="0"></button>
+                    <button class="testimonial-dot" data-index="1"></button>
+                    <button class="testimonial-dot" data-index="2"></button>
+                </div>
+                <button class="testimonial-nav-btn next" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <canvas id="ctaCanvas"></canvas>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    <span>Ready to create</span>
+                    <span class="highlight">something exceptional?</span>
+                </h2>
+                <p class="cta-description">
+                    Let's discuss your vision and bring it to life with stunning visuals.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Start Your Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:officialflixios@gmail.com" class="btn btn-ghost">
+                        <span>officialflixios@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">FLIXIOS</a>
+                    <p class="footer-tagline">Creative Media Studio</p>
+                    <p class="footer-uxi">A UXI Tech Brand</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="work.html">Work</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="services.html#reels">Reels & Shorts</a>
+                        <a href="services.html#ads">Ad Creatives</a>
+                        <a href="services.html#brand">Brand Videos</a>
+                        <a href="services.html#motion">Motion Design</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="mailto:officialflixios@gmail.com" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>officialflixios@gmail.com</span>
+                        </a>
+                        <a href="https://instagram.com/theflixios" target="_blank" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>@theflixios</span>
+                        </a>
+                        <a href="tel:+918885666332" class="footer-contact-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+91 8885666332</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 FLIXIOS. All rights reserved.</p>
+                <p class="footer-uxi-badge">A <strong>UXI Tech</strong> Brand</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-container">
+            <button class="video-modal-close" id="videoModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+            <div class="video-modal-content">
+                <video class="video-modal-player" id="videoModalPlayer" controls playsinline>
+                    <source src="" type="video/mp4">
+                </video>
+                <div class="video-modal-controls">
+                    <button class="video-mute-btn" id="videoMuteBtn">
+                        <svg class="mute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M23 9L17 15M17 9L23 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <svg class="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span class="mute-text">Sound Off</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
